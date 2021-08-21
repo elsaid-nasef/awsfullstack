@@ -12,7 +12,7 @@ import { constants } from 'os';
   
 
   // Set the network port  process.env.PORT || 
-  const port = 8083;
+  const port = process.env.PORT ||8080;
   
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
